@@ -1,0 +1,55 @@
+.trip-planner {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 350px;
+  margin: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* Added stronger shadow */
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.trip-planner h2 {
+  font-size: 26px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.trip-planner input[type="text"],
+.trip-planner input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
+.date-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Added space between date fields */
+}
+
+.trip-planner label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.start-planning-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold; /* Made the text bold to match the style */
+}
+
+
+.start-planning-btn:hover {
+  background-color: #ff543d;
+}
