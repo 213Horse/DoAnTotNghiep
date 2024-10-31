@@ -1,0 +1,270 @@
+
+/*-------------------------BOOK-HEADER-------------------------  */
+
+.plan-container{
+    height: 75px;
+    width: 100%;
+    justify-content: space-between;
+    border-block: 1px solid #ddd;
+    padding:10px 20px;
+
+}
+.plan-edit{
+    color: black;
+    height: 20px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.expense-btn{
+    height: 26px;
+    width: 100px;
+    font-size: 14px;
+    background: #f4f6f8;
+    color: #f25142;
+}
+.traveller-btn{
+    height: 26px;
+    width: 100px;
+    font-size: 14px;
+    background: #f4f6f8;
+    color: black;
+}
+.book-btn{
+    width: 105px;
+    height: 40px;
+    background: #f4f6f8;
+    font-size: 16px;
+    
+}
+.save-plan-btn{
+    width: 105px;
+    height: 40px;
+    background: #f25142;
+    color: white;
+    font-size: 16px;
+    
+}
+
+.book-btn-number{
+    width: 25px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f80ed;
+    color: white;
+}
+.ant-drawer .ant-drawer-header-title {
+    justify-content: flex-end;
+}
+
+/*-------------------------EXPENSES DRAWER-------------------------  */
+.drawer-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.your-expenses{
+    font-size: 24px;
+    font-weight: 500;
+}
+.expenses-price{
+    font-size: 32px;
+    font-weight: 500;
+}
+.custom-package{
+    display: flex;
+    gap: 1em;
+    border-radius: 1em;
+    background: #ecf3ee;
+    padding: 14px;
+    font-size: 14px;
+    align-items: center;
+}
+.custom-pack-para{
+    font-weight: 500;
+    line-height: 20px;
+}
+.custom-pack-para span{
+    color: rgb(68 137 81/ 1) ;
+}
+.interested-btn{
+    color: white;
+    font-weight: 500;
+    background: #f25142;
+}
+.canvas-circle{
+    display: block; 
+    box-sizing: border-box; 
+    height: 176px; 
+    width: 176px;
+}
+.detail-list{
+    width: 100%;
+}
+.ant-list-item-meta{
+    display: flex;
+    align-items: center !important;
+}
+.expenses-breakdown{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+/*-------------------------EXPENSES DRAWER-------------------------  */
+
+/*-------------------------BOOK-HEADER-------------------------  */
+
+
+/*-------------------------BOOK PURCHASE-------------------------  */
+
+
+.purchase-content{
+    margin-top: 20px;
+}
+.purchase-title{
+    font-weight: 500;
+    font-size: 24px;
+    
+}
+
+.purchase-description{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #637381;
+}
+.ant-select-single .ant-select-selector {
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+/* border-right: 0px !important; */
+}
+.planning-checkbox{
+    font-size: 16px;
+}
+
+.planning-input{
+    height: 48px;
+}
+.cancel-footer-btn{
+    font-size: 16px;
+    color: black;
+    padding: 0px;
+    border-radius: 0px;
+    text-decoration: underline;
+}
+.send-inquiry-btn{
+    width: 178px;
+    height: 48px;
+    background: #f25142;
+    font-size: 16px;
+    color: white;
+}
+
+/*-------------------------BOOK PURCHASE-------------------------  */
+
+/*-------------------------KANBAN-------------------------  */
+
+.kanban-container{
+    background: #F0F2F5;
+    height:83vh;
+    padding: 20px ;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    
+}
+.kanban-col{
+    height: 720px;
+
+}
+.add-sth-btn{
+    width: 100%;
+    border-radius: 6px;
+    background: #133a4a;
+    color: white;
+    font-size: 16px;
+    justify-content: start;
+    align-self: flex-end;
+    height: 40px;
+}
+.day-tag{
+    height: 20px;
+    align-items: center;
+    display: flex;
+}
+.optimize-btn{
+    font-size: 14px;
+}
+.input-title{
+    border: 0px !important;
+    font-size: 14px;
+}
+.input-title .active{
+    border: 0px !important
+}
+/*-------------------------KANBAN-------------------------  */
+
+
+/*-------------------------CALENDAR-------------------------  */
+.calendar-container{
+    background: #F0F2F5;
+    height:83vh;
+    padding: 20px ;
+    overflow-x: auto;
+}
+.rbc-header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 0px !important;
+}
+/* .rbc-time-header-content{
+    background: white;
+} */
+.rbc-timeslot-group{
+    background: white;
+}
+.rbc-day-bg{
+    flex: none !important;
+    width: 0px !important;
+    }
+.rbc-day-bg + .rbc-day-bg{
+border: 0px !important;
+    }
+.rbc-row-bg{
+    height: 0px !important;
+}
+.rbc-time-view .rbc-row {
+    min-height: 0px !important;
+}
+.rbc-time-view .rbc-allday-cell {
+height: 1px !important;
+}
+.rbc-timeslot-group{
+    height: 60px;
+}
+.rbc-time-column .rbc-timeslot-group {
+    flex: none !important;
+}
+.rbc-slot-selection{
+    background-color: rgb(244, 246, 248) !important;
+    color: black !important;
+    border-color: white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 6px 0px;
+}
+.input-title-cal{
+    border: 0px !important;
+    font-size: 14px;
+    background: #F0F2F5;
+}
+.input-title-cal:active{
+    border: 0px !important;
+    font-size: 14px;
+    background: #F0F2F5;
+}
+/*-------------------------CALENDAR-------------------------  */
+

@@ -1,0 +1,238 @@
+/*-------------------------PROMO ROW-------------------------  */
+
+.promo-row{
+    height: 27px;
+    background: #133A4A;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .promo-row a{
+    color: white;
+    border-bottom: 1px solid white;
+  }
+/*-------------------------PROMO ROW-------------------------  */
+
+/*-------------------------HERO BANNER-------------------------  */
+  .hero-banner{
+    background: url("../../Images/bg_banner.jpg");
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content{
+    width: 1180px;
+    height: 490px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 24px;
+  }
+  .hero-section{
+    max-width: 500px;
+  }
+  .date-select{
+    margin-top: 24px;
+  }
+
+  .ant-checkbox-inner {
+    height: 18px !important;
+    width: 18px !important;
+    border: 2px solid #ddd !important;
+  }
+  .startplan-button{
+    width: 100%;
+    background: #f25142;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .startplan-button:hover {
+    background: #FC7563 !important; 
+    color: white !important; 
+  }
+
+  /*-------------------------HERO BANNER-------------------------  */
+
+/*-------------------------CONTENT TITLE-------------------------  */
+  .itineraries-title{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+  }
+
+/*-------------------------CONTENT TITLE-------------------------  */
+
+
+
+
+/*-------------------------PLAN GRID-------------------------  */
+
+
+  .grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 84px;
+    height: 480px;
+    margin-bottom: 100px;
+  }
+  .grid img{
+    width: 580px;
+    height: 480px;
+  }
+  .plan-title{
+    font-size: 44px !important;
+    margin-bottom: 10px !important;
+    color: #212b36 !important;
+  }
+
+  .ant-list .ant-list-item{
+    padding: 0px !important;
+  }
+  
+  .start-planning-button{
+    background: #083344;
+    width: 160px;
+    height: 50px;
+    color: white;
+    margin-top: 30px;
+  }
+  /*-------------------------PLAN GRID-------------------------  */
+  
+  
+  /*-------------------------COPILOT SECTION-------------------------  */
+  .home-copilot{
+    width: 980px;
+    height: 380px;
+    background: #1F2937;
+    border-radius: 1em;
+    margin-top: 100px;
+  }
+  .copilot-content{
+    padding: 36px 32px;
+    height: 300px;
+  }
+  .upcoming-feature{
+    width: 170px;
+    height: 34px;
+    font-size: 16px;
+    color: #000000d9;
+    -webkit-text-fill-color: transparent;
+    
+    background: linear-gradient(268deg, #89c8fd 6.99%, #8f41f6 96.67%);
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid hsla(0, 0%, 100%, .08); 
+    border-radius: 6px;
+  }
+  .planner-copilot{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(268deg, #89c8fd 6.99%, #8f41f6 96.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 44px;
+  }
+  .generate{
+    color:white;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .personal-ai{
+    color:white;
+    font-size: 216x;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    max-width: 400px;
+  }
+  .home-join-btn{
+    background: white;
+    color:black;
+    width: 200px;
+    height: 48px;
+    padding: 7px 15px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*-------------------------COPILOT SECTION-------------------------  */
+
+
+  /*--------------------------HOME FOOTER-------------------------  */
+  .footer{
+    height: 480px;
+    width: 100%;
+    border-top: 1px solid #dfe3e8;
+    background: white;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-content{
+      width: 1200px;
+      padding: 48px 0px 32px;
+  }
+  .customer-support{
+    background: rgba(242, 81, 66, .1);
+    height: 120px;
+    border-radius: 12px;
+    padding: 20px 30px;
+  }
+  .contact-us-btn{
+    height: 48px;
+    width: 100%;
+    background: #f25142;
+    color: white;
+    font-size: 16px;
+}
+.subscribe-input{
+  height: 40px;
+  background: white;
+  margin-top: 8px;
+  font-size: 16px;
+  border:1px solid #c4cdd5
+}
+.subscribe-button{
+  background: #f25142;
+  color: white;
+  font-size: 14px;
+}
+.icon-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.icon-footer{
+    border: 1px solid #dfe3e8;
+    border-radius: 32px;
+    padding: 5px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+.footer-titles{
+  margin-bottom: 20px;
+}
+.footer-cols{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  color: #212b36;
+}
+  /*--------------------------HOME FOOTER-------------------------  */
