@@ -157,10 +157,10 @@ const HeroBanner = () => {
                 </div>
 
                 <Row style={{ marginTop: "24px", gap: "10px" }}>
-                  <Checkbox></Checkbox>
+                  {/* <Checkbox></Checkbox>
                   <Text style={{ fontSize: "16px" }}>
                     Let AI create a first draft for you
-                  </Text>
+                  </Text> */}
                 </Row>
                 <Button
                   onClick={() => {
