@@ -34,7 +34,7 @@ const PlanBook = ({setIsToggled, isToggled}) => {
   }
   return (
     <Row className="plan-container">
-      <Col span={15}>
+      <Col>
         <Row style={{ fontSize: "1.5rem", height:"30px"}}>7 days to Viet Tri</Row>
         <Row style={{ alignItems:"center", gap:"10px"}}>
           <a className="plan-edit" href="youtube.com">Edit Destination/ Dates</a>
@@ -51,7 +51,7 @@ const PlanBook = ({setIsToggled, isToggled}) => {
           
         </Row>
       </Col>
-      <Col span={5}>
+      <Col>
         <Row style={{justifyContent:"flex-end"}}>
           <Button.Group
             style={{ paddingRight: "10px", borderRight: "1px solid #ddd" }}
@@ -59,12 +59,12 @@ const PlanBook = ({setIsToggled, isToggled}) => {
             <Button
               icon={<AppstoreOutlined style={{fontSize:"24px"}}/>}
               onClick={() => setIsToggled(false)}
-              style={{ width: 36, height: 36, padding: 0, background:`${isToggled ? "#F3F5F7" : "white"}`,color:`${isToggled ? "#ddd" : "#f25142"}`}}
+              style={{ width: 36, height: 36, padding: 0, background:`${isToggled ? "#F3F5F7" : "white"}`,color:`${isToggled ? "gray" : "#f25142"}`}}
             />
             <Button
               icon={<CalendarOutlined style={{fontSize:"24px"}}/>}
               onClick={() => setIsToggled(true)}
-              style={{ width: 36, height: 36, padding: 0, background:`${isToggled ? "white" : "#F3F5F7"}`, color:`${isToggled ? "#f25142": "#ddd"}`}}
+              style={{ width: 36, height: 36, padding: 0, background:`${isToggled ? "white" : "#F3F5F7"}`, color:`${isToggled ? "#f25142": "gray"}`}}
             />
           </Button.Group>
           <Row style={{marginLeft:"10px", gap:"10px"}}>

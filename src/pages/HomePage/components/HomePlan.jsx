@@ -29,7 +29,7 @@ const data2 = [
   ];
   const HomePlan = () => {
   return (
-    <div style={{ width: "1190px" }}>
+    <div className="home-plan">
       <div className="grid">
         <img src={plan1} alt="" />
         <div className="plan">

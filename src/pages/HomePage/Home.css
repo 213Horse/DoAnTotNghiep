@@ -17,6 +17,7 @@
 /*-------------------------HERO BANNER-------------------------  */
   .hero-banner{
     background: url("../../Images/bg_banner.jpg");
+    width: 100%;
     height: 600px;
     display: flex;
     justify-content: center;
@@ -70,15 +71,28 @@
 
 
 /*-------------------------PLAN GRID-------------------------  */
-
+  .home-plan{
+    max-width: 1190px;
+    
+  }
 
   .grid{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 84px;
-    height: 480px;
+    height: 680px;
     margin-bottom: 100px;
+  }
+  @media screen and (min-width: 360px) and (max-width: 770px) {
+    .grid {
+      flex-direction: column; 
+      height: auto; 
+      gap: 20px;
+      justify-content: flex-start; 
+      margin-bottom: 100px;
+
+    }
   }
   .grid img{
     width: 580px;
@@ -187,6 +201,12 @@
     border-radius: 12px;
     padding: 20px 30px;
   }
+  @media screen and (min-width: 360px) and (max-width: 770px) {
+  .customer-support{
+    height: 280px;
+  }
+}
+
   .contact-us-btn{
     height: 48px;
     width: 100%;

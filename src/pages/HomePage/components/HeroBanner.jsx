@@ -13,13 +13,16 @@ import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import "../Home.css";
 import { useNavigate } from "react-router";
+import { useMediaQuery } from "react-responsive";
 const { Text, Title } = Typography;
 const { RangePicker } = DatePicker;
 
 const HeroBanner = () => {
   const navigate = useNavigate();
   const [searchFields, setSearchFields] = useState([{ id: 1, value: "" }]);
-
+  const isMobile = useMediaQuery({
+    query: "(min-width: 360px) and (max-width: 770px)",
+  });
   const addSearchField = () => {
     setSearchFields([
       ...searchFields,
@@ -92,101 +95,108 @@ const HeroBanner = () => {
           </div>
         </div>
         <div className="hero-planner hero-section">
-          <Card style={{ width: "420px" }}>
-            <Title level={3}>Trip Planner</Title>
-            <Text type="secondary" style={{ fontSize: "12px" }}>
-              Enter destination (country, region, or city)
-            </Text>
-            <div>
-              {searchFields.map((field, index) => (
-                <div
-                  key={field.id}
+          {isMobile ? (
+            <Button></Button>
+          ) : (
+            <Card style={{ width: "420px" }}>
+              <Title level={3}>Trip Planner</Title>
+              <Text type="secondary" style={{ fontSize: "12px" }}>
+                Enter destination (country, region, or city)
+              </Text>
+              <div>
+                {searchFields.map((field, index) => (
+                  <div
+                    key={field.id}
+                    style={{
+                      marginBottom: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Input
+                      placeholder="Where to?"
+                      value={field.value}
+                      onChange={(e) => handleInputChange(index, e)}
+                      style={{ width: "100%", height: "50px" }}
+                    />
+                    {searchFields.length > 1 && (
+                      <CloseCircleOutlined
+                        style={{
+                          fontSize: "20px",
+                          color: "gray",
+                          marginLeft: "10px",
+                          cursor: "pointer",
+                        }}
+                        onClick={() => removeSearchField(field.id)}
+                      />
+                    )}
+                  </div>
+                ))}
+
+                <Button
+                  type="link"
+                  icon={<PlusCircleOutlined />}
+                  onClick={addSearchField}
                   style={{
-                    marginBottom: "10px",
                     display: "flex",
                     alignItems: "center",
+                    color: "black",
+                    fontSize: "16px",
                   }}
                 >
-                  <Input
-                    placeholder="Where to?"
-                    value={field.value}
-                    onChange={(e) => handleInputChange(index, e)}
+                  Add Destination
+                </Button>
+                <div className="date-select">
+                  <Text type="secondary" style={{ fontSize: "12px" }}>
+                    Dates
+                  </Text>{" "}
+                  <br />
+                  <RangePicker
                     style={{ width: "100%", height: "50px" }}
-                  />
-                  {searchFields.length > 1 && (
-                    <CloseCircleOutlined
-                      style={{
-                        fontSize: "20px",
-                        color: "gray",
-                        marginLeft: "10px",
-                        cursor: "pointer",
-                      }}
-                      onClick={() => removeSearchField(field.id)}
-                    />
-                  )}
+                  ></RangePicker>
                 </div>
-              ))}
 
-              <Button
-                type="link"
-                icon={<PlusCircleOutlined />}
-                onClick={addSearchField}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  color: "black",
-                  fontSize: "16px",
-                }}
-              >
-                Add Destination
-              </Button>
-              <div className="date-select">
-                <Text type="secondary" style={{ fontSize: "12px" }}>
-                  Dates
-                </Text>{" "}
-                <br />
-                <RangePicker
-                  style={{ width: "100%", height: "50px" }}
-                ></RangePicker>
+                <Row style={{ marginTop: "24px", gap: "10px" }}>
+                  <Checkbox></Checkbox>
+                  <Text style={{ fontSize: "16px" }}>
+                    Let AI create a first draft for you
+                  </Text>
+                </Row>
+                <Button
+                  onClick={() => {
+                    navigate("/planning");
+                  }}
+                  size="large"
+                  className="startplan-button"
+                >
+                  Start Planning
+                </Button>
+                <p
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    color: "#6b7280",
+                    marginTop: "20px",
+                  }}
+                >
+                  {" "}
+                  <span>
+                    <a
+                      href="www.youtube.com"
+                      style={{
+                        color: "black",
+                        borderBottom: "1px solid black",
+                      }}
+                    >
+                      Find traveller plan
+                    </a>{" "}
+                    &nbsp;Instead{" "}
+                  </span>
+                </p>
               </div>
-
-              <Row style={{ marginTop: "24px", gap: "10px" }}>
-                <Checkbox></Checkbox>
-                <Text style={{ fontSize: "16px" }}>
-                  Let AI create a first draft for you
-                </Text>
-              </Row>
-              <Button
-                onClick={() => {
-                  navigate("/planning");
-                }}
-                size="large"
-                className="startplan-button"
-              >
-                Start Planning
-              </Button>
-              <p
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  color: "#6b7280",
-                  marginTop: "20px",
-                }}
-              >
-                {" "}
-                <span>
-                  <a
-                    href="www.youtube.com"
-                    style={{ color: "black", borderBottom: "1px solid black" }}
-                  >
-                    Find traveller plan
-                  </a>{" "}
-                  &nbsp;Instead{" "}
-                </span>
-              </p>
-            </div>
-          </Card>
+            </Card>
+          )}
         </div>
       </div>
     </div>

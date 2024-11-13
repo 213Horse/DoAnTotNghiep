@@ -205,6 +205,9 @@ border-bottom-right-radius: 0px;
 .input-title .active{
     border: 0px !important
 }
+.accommodation-card:hover .close-button {
+    display: block;
+  }
 /*-------------------------KANBAN-------------------------  */
 
 

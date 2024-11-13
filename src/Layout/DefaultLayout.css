@@ -8,8 +8,13 @@
     background: white;
   }
   .header-content{
-    width: 1200px;
+    width: 60%;
     justify-content: space-between;
+  }
+  .header-content.planner{
+    width: 90%;
+    justify-content: space-between;
+
   }
   .left-header h1{
     display: flex;
@@ -45,7 +50,7 @@
   .ant-input-affix-wrapper{
     background: #F9FAFB;
     border: 0;
-    width: 260px;
+    max-width: 260px;
     height: 40px;
   }
 /*-------------------------HEADER-------------------------  */
